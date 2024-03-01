@@ -1,5 +1,6 @@
 function init() {
-  newsletterElement.init();
+  newsletter.init();
+  destinations.init();
 }
 
 document.addEventListener("DOMContentLoaded", init);

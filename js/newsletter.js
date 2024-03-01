@@ -1,19 +1,16 @@
-const newsletterElement = {
+const newsletter = {
   init() {
     const newsletterButton = document.querySelector("#newsletter");
-    newsletterButton.addEventListener(
-      "click",
-      newsletterElement.handleOpenNewsletter
-    );
+    newsletterButton.addEventListener("click", newsletter.handleOpenNewsletter);
 
     const closeNewsletterButton = document.querySelector(".newsletter__close");
     closeNewsletterButton.addEventListener(
       "click",
-      newsletterElement.handleCloseNewsletter
+      newsletter.handleCloseNewsletter
     );
 
     const form = document.querySelector("form");
-    form.addEventListener("submit", newsletterElement.handleSubmitForm);
+    form.addEventListener("submit", newsletter.handleSubmitForm);
   },
 
   handleOpenNewsletter(event) {
@@ -56,7 +53,7 @@ const newsletterElement = {
     const hasAlreadyAnError = newsletterContent.querySelector(".message");
     const input = document.querySelector(".newsletter__field");
     const inputValue = input.value;
-    if (newsletterElement.isEmailValid(inputValue)) {
+    if (newsletter.isEmailValid(inputValue)) {
       if (hasAlreadyAnError) {
         hasAlreadyAnError.remove();
       }
