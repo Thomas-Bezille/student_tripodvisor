@@ -1,4 +1,4 @@
-# Permis / Assurances AT2 - CP7 : Develop a dynamic web user interface.
+# Permis / Assurances AT1 - CP3 : Develop a dynamic web user interface.
 
 The objective of this exercise is to create elements of dynamic interaction with the user.
 
